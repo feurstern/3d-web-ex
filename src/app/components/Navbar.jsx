@@ -59,10 +59,12 @@ const Navbar = () => {
           }
         </ul>
 
+        
+
         {/* creating dynamic list when the sizr of the screen is lower than 720px */}
         <div className='sm:hidden flex flex-1 justify-end item-centers'>
           <img
-            src={toggle ? menuSvg : closeSvg}
+            src={toggle ? menu : close}
             className='w-[28px] h-[28px] object-contain cursor-pointer'
             onClick={() => setToggle(!toggle)}
           ></img>
